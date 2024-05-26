@@ -1,0 +1,24 @@
+.NavList {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+  margin: 0px;
+  padding: 10px;
+  width: 400px;
+  position: fixed;
+}
+
+.NavItem {
+  margin-right:26px;
+  color: whitesmoke;
+  width: 50px;
+  
+}
+
+.NavItem:hover {
+  color: rgba(255, 166, 0, 0.842);
+  cursor: pointer;
+  font-weight: bolder;
+}
