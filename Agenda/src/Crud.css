@@ -1,0 +1,20 @@
+.EditSpace{
+    display: flex;
+    color: white;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.EditorContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.EditorElement {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 10px;
+    max-width: 20%;
+}

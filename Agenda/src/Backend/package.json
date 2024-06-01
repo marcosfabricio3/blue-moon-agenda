@@ -4,7 +4,7 @@
   "description": "",
   "main": "CRUD.js",
   "scripts": {
-    "start": "CRUD.js"
+    "start": "api.js"
   },
   "keywords": [],
   "author": "",

@@ -9,9 +9,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
     <NavBar />
-    <div className='DailyTaskContainer'><TaskItem /></div>
-
     <Crud />
+    <div className='DailyTaskContainer'><TaskItem /></div>
     
   </React.StrictMode>,
 )
