@@ -1,6 +1,8 @@
 import './Crud.css';
 import React, { useState } from 'react';
-import ImageCHange from './ImagToggle';
+import ImageToggle from './ImagToggle';
+import FormAdd from './FormAdd.jsx'
+
 // Icon inactive
 import LogoAdd from './Images/icons/addInactive.png';
 import LogoEdit from './Images/icons/editInactive.png';
@@ -16,12 +18,15 @@ function Crud () {
     <div className='EditSpace'>
       <div className='EditorContainer'>
 
-        <ImageCHange defaultImage={LogoAdd}hoverImage={ActiveAdd}/>
-        <ImageCHange defaultImage={LogoEdit}hoverImage={ActiveEdit}/>
-        <ImageCHange defaultImage={LogoDelete}hoverImage={ActiveDelete}/>
+        <ImageToggle defaultImage={LogoAdd}hoverImage={ActiveAdd}/>
+        <ImageToggle defaultImage={LogoEdit}hoverImage={ActiveEdit}/>
+        <ImageToggle defaultImage={LogoDelete}hoverImage={ActiveDelete}/>
 
       </div>
     </div>
+
+    <FormAdd/>
+    
     </>
   )
 };

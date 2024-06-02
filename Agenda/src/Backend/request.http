@@ -11,7 +11,7 @@ Content-Type: application/json
 {
     "name": "Ramiro Peres",
     "en_tratamiento": false,
-    "hora_reservada": true,
+    "fecha": "1/12/25",
     "tratamiento_actual": "manicura"
 }
 

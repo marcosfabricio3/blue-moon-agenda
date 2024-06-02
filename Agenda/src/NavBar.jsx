@@ -8,7 +8,6 @@ function NavBar() {
     <>
       <ul className='NavList'>
         <li className='NavItem'>INICIO</li>
-        <li className='NavItem'>AGENDA</li>
         <li className='NavItem'>PAGOS</li>
         <li className='NavItem'>FICHAS</li>
         <li className='NavItem'>GESTION</li>

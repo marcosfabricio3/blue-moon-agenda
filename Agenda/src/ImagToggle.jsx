@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
-function ImageCHange({ defaultImage, hoverImage }) {
+function ImagToggle({ defaultImage, hoverImage}) {
     const [image, setImage] = useState(defaultImage);
+
 
     return (
         <img
@@ -14,4 +15,4 @@ function ImageCHange({ defaultImage, hoverImage }) {
     )
 };
 
-export default ImageCHange;
+export default ImagToggle;
