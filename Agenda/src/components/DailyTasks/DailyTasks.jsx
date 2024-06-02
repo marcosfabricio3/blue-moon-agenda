@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import TaskItem from './TaskItem';
+import './DailyTasks.css'
+import TaskItem from '../common/TaskItem/TaskItem';
 
 // FUNCIO QUE DEVUELVE UN COMPONENTE CON TODOS LOS PACIENTES AGENDADOS
 function DailyTasks(){

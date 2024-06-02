@@ -2,12 +2,3 @@ body {
     margin: 0;
     background-color: #343434;;
 }
-
-.DailyTaskContainer {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 50px;
-}

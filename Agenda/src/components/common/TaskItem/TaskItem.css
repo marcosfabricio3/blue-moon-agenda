@@ -24,24 +24,9 @@
     font-size: 150%;
 }
 
-.TaskPatientRecord{
-    color: rgba(255, 166, 0, 0.842);
-    font-family: "Roboto", sans-serif;
-    font-weight: lighter;
-    font-size: 25px;
-    border: solid 2px;
-    border-radius: 3px;
-    padding: 5px;
-    
-}
-
 /* Hovers */
 .TaskItem:hover {
     color: rgba(255, 166, 0, 0.842);
     cursor: pointer;
     border-bottom: solid 2px rgba(255, 166, 0, 0.842);
-}
-
-.TaskPatientRecord:hover {
-    color: rgba(139, 92, 4, 0.842);
 }

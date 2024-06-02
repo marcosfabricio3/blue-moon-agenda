@@ -1,0 +1,37 @@
+.InputLongContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.InputLong {
+    border: none;
+    border-bottom: 1px solid rgba(255, 166, 0, 0.842);
+    border-left: 1px solid rgba(255, 166, 0, 0.842);
+    background: none;
+    padding: 5px 5px;
+    margin: 0;
+    margin-bottom: 30px;
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 20px;
+    color: white;
+}
+
+.LongLabel{
+    margin-right: auto;
+    border-bottom: 1px solid rgba(255, 166, 0, 0.842);
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    color: white;
+    font-size: 15px;
+}
+
+/* HOVER */
+.InputLongContainer:focus-within .LongLabel {
+    color: rgba(255, 166, 0, 0.842);
+}

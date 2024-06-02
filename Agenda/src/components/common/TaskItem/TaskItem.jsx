@@ -1,4 +1,5 @@
 import './TaskItem.css'
+import GenericButton1 from '../GenericButton1/GenericButton1'
 
 // ESTA FUNCION CREA INDIVIDUALMENTE CADA ELEMENTO PARA SER MOSTRADO EN EL DAILY TASK O EN LA FICHA
 function TaskItem ({ id, name, fecha}){
@@ -9,7 +10,9 @@ function TaskItem ({ id, name, fecha}){
                     <p className='TaskHour'>{fecha}</p>
                     <p className='TaskPatient'>{name}</p>
                 </div>
-                <p className='TaskPatientRecord' id={id}>FICHA</p>
+
+                <GenericButton1 id={id} textButton={'FICHA'}/>
+                
             </div>
         </>
     )

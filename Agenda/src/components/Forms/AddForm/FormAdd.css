@@ -23,32 +23,6 @@
     height: auto;
 }
 
-.InputLong {
-    border: none;
-    border-bottom: 1px solid rgba(255, 166, 0, 0.842);
-    border-left: 1px solid rgba(255, 166, 0, 0.842);
-    background: none;
-    padding: 5px 15px;
-    margin: 0;
-    margin-bottom: 30px;
-    outline: none;
-    box-shadow: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-size: 20px;
-    color: white;
-}
-
-.LongLabel{
-    margin-right: auto;
-    border-bottom: 1px solid rgba(255, 166, 0, 0.842);
-    margin-bottom: 0;
-    padding-bottom: 2px;
-    color: white;
-    font-size: 15px;
-}
-
 .AntationAndButtonContainer {
     display: flex;
     justify-content: space-around;
@@ -60,7 +34,8 @@
     border: 1px solid rgba(255, 166, 0, 0.842);
     background: none;
     padding: 0;
-    margin: 0;
+    margin: 0px;
+    margin-right: 10px;
     outline: none;
     box-shadow: none;
     resize: none;
