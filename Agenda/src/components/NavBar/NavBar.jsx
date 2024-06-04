@@ -1,15 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './NavBar.css'
+import { Link, useLocation } from 'react-router-dom'
 
 function NavBar() {
   const [count, setCount] = useState(0)
 
+  const [activeRoute, setActiveRoute] = useState('/');
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveRoute(location.pathname);
+  }, [location.pathname]);
+
   return (
     <>
       <ul className='NavList'>
-        <li className='NavItem'>INICIO</li>
+        <li><Link className={activeRoute === '/' ? 'NavItem active' : 'NavItem'} to="/">INICIO</Link></li>
         <li className='NavItem'>PAGOS</li>
-        <li className='NavItem'>FICHAS</li>
+        <li><Link className={activeRoute === '/Fichas' ? 'NavItem active' : 'NavItem'} to="/Fichas">FICHAS</Link></li>
         <li className='NavItem'>GESTION</li>
       </ul>
     </>

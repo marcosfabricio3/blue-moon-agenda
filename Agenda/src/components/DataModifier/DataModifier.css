@@ -18,3 +18,12 @@
     margin: 10px;
     max-width: 20%;
 }
+
+.FormContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.FormAddContainer {
+    width: 60%;
+}

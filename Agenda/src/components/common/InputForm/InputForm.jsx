@@ -1,11 +1,11 @@
 import './InputForm.css'
 
-function InputForm({TextInput}) {
+function InputForm({TextInput, name}) {
     return(
         <>
             <div className='InputLongContainer'>
-                <label className='LongLabel' htmlFor={TextInput}>{TextInput}</label>
-                <input className='InputLong' type="text" name={TextInput} />
+                <label className='LongLabel' htmlFor={name}>{TextInput}</label>
+                <input className='InputLong' id={name} type="text" name={name} />
             </div>
         </>
     )

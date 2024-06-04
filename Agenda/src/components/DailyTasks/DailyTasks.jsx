@@ -22,7 +22,7 @@ function DailyTasks(){
             {/* EJECUCION DEL FILTRO Y SI TIENE ELEMENTOS LOS DEVUELVE Y SI NO HAY DEVUELVE UN ELEMENTO QUE DICE NO HAY */}
             {filterData.length > 0? (
                 filterData.map((ficha) => (
-                    <TaskItem id={ficha.id} name={ficha.name} fecha={ficha.fecha}/>
+                    <TaskItem key={ficha.id} id={ficha.id} name={ficha.name} fecha={ficha.fecha}/>
                 ))
             ) : ( <p>no hay</p> )}
 

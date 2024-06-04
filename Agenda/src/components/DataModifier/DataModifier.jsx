@@ -1,6 +1,6 @@
 import './DataModifier.css';
-import React, { useState } from 'react';
-import ImageToggle from '../ImagToggle.jsx';
+import React, { useRef, useState, useEffect } from 'react';
+import ModifierButtons from '../ModifierButtons.jsx';
 import FormAdd from '../Forms/AddForm/FormAdd.jsx'
 
 // Icon inactive
@@ -13,19 +13,42 @@ import ActiveEdit from '../../assets/Images/icons/editActiv.png'
 import ActiveDelete from '../../assets/Images/icons/deleteActive.png';
 
 function DataModifier () {
+  const [showForm, setShowForm] = useState(false);
+  const formRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if(formRef.current && !formRef.current.contains(event.target)) {
+      setShowForm(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return(
     <>
     <div className='EditSpace'>
       <div className='EditorContainer'>
 
-        <ImageToggle defaultImage={LogoAdd}hoverImage={ActiveAdd}/>
-        <ImageToggle defaultImage={LogoEdit}hoverImage={ActiveEdit}/>
-        <ImageToggle defaultImage={LogoDelete}hoverImage={ActiveDelete}/>
+        <ModifierButtons defaultImage={LogoAdd}hoverImage={ActiveAdd}onClick={() => setShowForm(true)}/>
+
+        <ModifierButtons defaultImage={LogoEdit}hoverImage={ActiveEdit}/>
+        <ModifierButtons defaultImage={LogoDelete}hoverImage={ActiveDelete}/>
 
       </div>
     </div>
 
-    <FormAdd/>
+    <div className='FormContainer'>
+    {showForm && (
+      <div className='FormAddContainer' ref={formRef}>
+        <FormAdd/>
+      </div>
+    )}
+    </div>
     
     </>
   )

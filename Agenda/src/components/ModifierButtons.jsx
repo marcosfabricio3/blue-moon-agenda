@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function ImagToggle({ defaultImage, hoverImage}) {
+function ModifierButtons({ defaultImage, hoverImage, onClick }) {
     const [image, setImage] = useState(defaultImage);
 
 
@@ -10,9 +10,10 @@ function ImagToggle({ defaultImage, hoverImage}) {
             className='EditorElement'
             onMouseOver={ () => setImage(hoverImage)} 
             onMouseOut={ () => setImage(defaultImage)}
+            onClick={onClick}
             alt="" 
         />
     )
 };
 
-export default ImagToggle;
+export default ModifierButtons;

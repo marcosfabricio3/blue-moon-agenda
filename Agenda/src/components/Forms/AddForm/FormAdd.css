@@ -19,18 +19,20 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
 .AntationAndButtonContainer {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    align-items: center;
+    width: 100%;
     height: 10%;
 }
 
 .AnotationFormAdd {
+    align-items: center;
     border: 1px solid rgba(255, 166, 0, 0.842);
     background: none;
     padding: 0;
@@ -45,6 +47,7 @@
     width: 80%;
     color: white;
     padding: 5px;
+    height: 125%;
 }
 
 .SendFormAdd {
@@ -55,4 +58,21 @@
     border: solid 2px;
     border-radius: 3px;
     padding: 5px;
+}
+
+.ButtonAdd {
+    color: rgba(255, 166, 0, 0.842);
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    border: solid 2px;
+    border-radius: 3px;
+    padding: 5px;
+    margin: auto; 
+    background: none;
+}
+
+/* Hover */
+.ButtonAdd:hover {
+    color: rgba(139, 92, 4, 0.842);
 }

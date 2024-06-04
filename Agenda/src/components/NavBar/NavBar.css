@@ -14,11 +14,15 @@
   margin-right:26px;
   color: whitesmoke;
   width: 50px;
-  
+  text-decoration-line: none;
 }
 
 .NavItem:hover {
   color: rgba(255, 166, 0, 0.842);
   cursor: pointer;
   font-weight: bolder;
+}
+
+.NavItem.active {
+  color: rgba(255, 166, 0, 0.842);
 }
