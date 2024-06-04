@@ -22,8 +22,13 @@
 .FormContainer {
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 10%;
+    width: auto;
+    height: auto;
 }
 
 .FormAddContainer {
-    width: 60%;
+    z-index: 1000;
+    width: 100%;
 }

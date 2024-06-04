@@ -60,7 +60,7 @@ function FormAdd() {
 
                 <div className='AntationAndButtonContainer'>
 
-                    {/* <textarea className='AnotationFormAdd' name="anotacion" id=""></textarea> */}
+                    <textarea className='AnotationFormAdd' name="anotacion" id=""></textarea>
                     <button type="submit" className='ButtonAdd'>GUARDAR</button>
                     
                 </div>

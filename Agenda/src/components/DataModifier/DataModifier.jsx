@@ -40,14 +40,15 @@ function DataModifier () {
         <ModifierButtons defaultImage={LogoDelete}hoverImage={ActiveDelete}/>
 
       </div>
-    </div>
 
-    <div className='FormContainer'>
+      <div className='FormContainer'>
     {showForm && (
       <div className='FormAddContainer' ref={formRef}>
         <FormAdd/>
       </div>
     )}
+    </div>
+    
     </div>
     
     </>
