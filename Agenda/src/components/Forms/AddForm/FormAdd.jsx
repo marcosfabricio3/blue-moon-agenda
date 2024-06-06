@@ -9,10 +9,9 @@ function FormAdd() {
         // Obtener los datos del formulario
         const formData = event.target.elements;
         const nombre = formData.nombre.value;
-        const tratamiento = formData.tratamiento.value;
-        const telefono = formData.telefono.value;
-        const fecha = formData.fecha.value;
-        const precio = formData.precio.value;
+        const celular = formData.celular.value;
+        const en_tratamiento = formData.en_tratamiento.value;
+        const reserva = formData.reserva.value;
     
         // Realizar la solicitud POST a la API
         try {
@@ -23,12 +22,9 @@ function FormAdd() {
             },
             body: JSON.stringify({
               name: nombre,
-              tratamiento_actual: tratamiento,
-              celular: telefono,
-              fecha,
-              precio_acordado: precio,
-              en_tratamiento: true, // Puedes establecer el valor según tu lógica
-              reserva: true, // Puedes establecer el valor según tu lógica
+              celular: celular,
+              en_tratamiento: en_tratamiento,
+              reserva: reserva,
             }),
           });
           if (response.ok) {
@@ -51,10 +47,9 @@ function FormAdd() {
                 <div className='ContainerData'>
 
                     <InputForm TextInput={"Nombre"} name={"nombre"}/>
-                    <InputForm TextInput={"Tratamiento"} name={"tratamiento"}/>
-                    <InputForm TextInput={"Telefono"} name={"telefono"}/>
-                    <InputForm TextInput={"Fecha"} name={"fecha"}/>
-                    <InputForm TextInput={"Precio"} name={"precio"}/>
+                    <InputForm TextInput={"Celular"} name={"celular"}/>
+                    <InputForm TextInput={"En Tratamiento"} name={"en_tratamiento"}/>
+                    <InputForm TextInput={"Reserva"} name={"reserva"}/>
 
                 </div>
 

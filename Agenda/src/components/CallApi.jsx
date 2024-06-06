@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 
-const URL = 'http://localhost:3000/fichas';
-
 function CallApi(URL) {
 const [data, setData] = useState(null);
 

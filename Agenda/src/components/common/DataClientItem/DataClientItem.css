@@ -1,0 +1,47 @@
+.DataClientItem {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px rgba(255, 166, 0, 0.842);
+    width: 60%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.ElementData {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.SpanData {
+    color: rgba(255, 166, 0, 0.842);
+}
+
+.HistoriContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.ButtonHistori {
+    color: rgba(255, 166, 0, 0.842);
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    border: solid 2px;
+    border-radius: 3px;
+    padding: 5px;
+    margin: auto; 
+    background: none;
+}
+
+/* Hover */
+.ButtonHistori:hover {
+    color: rgba(139, 92, 4, 0.842);
+    cursor: pointer;
+}
+
+.ClientId {
+    font-size: small;
+    color: grey;
+    margin-right: 5px;
+}
