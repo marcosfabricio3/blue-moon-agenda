@@ -1,0 +1,24 @@
+.EditFormContainer {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgba(255, 166, 0, 0.842);
+    background-color: rgba(52, 52, 52, 0.9);
+    width: 100%;
+    margin-top: 10%;
+    padding: 5%;
+}
+
+.PatientSelector {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%
+}
+
+.InputEditSearch {
+    width: 80%;
+}
+
+.ButtonEditSearch {
+
+}

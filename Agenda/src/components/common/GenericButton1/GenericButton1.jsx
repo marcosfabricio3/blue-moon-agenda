@@ -3,7 +3,7 @@ import "./GenericButton.css";
 function GenericButton1({ id, textButton }) {
   return (
     <>
-      <p className="TaskPatientRecord" id={id}>{textButton}</p>
+      <button className="TaskPatientRecord" id={id}>{textButton}</button>
     </>
   );
 }

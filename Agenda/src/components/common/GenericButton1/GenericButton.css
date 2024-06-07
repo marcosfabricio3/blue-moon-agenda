@@ -1,5 +1,6 @@
 .TaskPatientRecord {
   color: rgba(255, 166, 0, 0.842);
+  background: none;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 25px;

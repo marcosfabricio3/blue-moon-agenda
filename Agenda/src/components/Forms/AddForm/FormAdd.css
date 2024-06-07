@@ -6,9 +6,9 @@
   height: auto;
   font-family: "Oswald", sans-serif;
   margin-bottom: 30px;
-  background-color: #343434;
+  background-color: rgba(52, 52, 52, 0.9);
   border: 2px solid rgba(255, 166, 0, 0.842);
-  padding: 15px;
+  padding: 15%;
   border-radius: 5%;
 }
 
