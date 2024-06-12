@@ -1,3 +1,5 @@
+import React, { useRef} from "react";
+
 // COMPONENTS
 import InputForm from "../../common/InputForm/InputForm";
 
@@ -5,15 +7,17 @@ import InputForm from "../../common/InputForm/InputForm";
 import "./FormAdd.css";
 
 function FormAdd() {
+  const formRef = useRef(null);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     // GET FORM DATA
-      const formData = event.target.elements;
-      const nombre = formData.nombre.value;
-      const celular = formData.celular.value;
-      const en_tratamiento = formData.en_tratamiento.value;
-      const reserva = formData.reserva.value;
+      var formData = event.target.elements;
+      var nombre = formData.nombre.value;
+      var celular = formData.celular.value;
+      var en_tratamiento = formData.en_tratamiento.value;
+      var reserva = formData.reserva.value;
     //
 
     // MAKE THE POST REQUEST TO THE API
@@ -33,6 +37,7 @@ function FormAdd() {
         if (response.ok) {
           console.log("Ficha guardada con éxito");
           // Puedes realizar acciones adicionales después de guardar la ficha
+          formRef.current.reset();
         } else {
           console.error("Error al guardar la ficha");
         }
@@ -40,12 +45,13 @@ function FormAdd() {
         console.error("Error al realizar la solicitud:", error);
       }
     //
+
   };
 
   return (
     <>
       {/* FORMULARIO */}
-      <form className="FormAdd" onSubmit={handleSubmit}>
+      <form ref={formRef} className="FormAdd" onSubmit={handleSubmit}>
 
         <p className="TitleFormAdd">Nueva hora</p>
 

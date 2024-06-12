@@ -1,7 +1,7 @@
 .DataClientItem {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 2px rgba(255, 166, 0, 0.842);
+  border-bottom: solid 2px white;
   width: 60%;
   margin-top: 30px;
   padding-bottom: 10px;
@@ -34,14 +34,18 @@
   background: none;
 }
 
+.ClientId {
+  font-size: small;
+  color: grey;
+  margin-right: 5px;
+}
+
 /* Hover */
 .ButtonHistori:hover {
   color: rgba(139, 92, 4, 0.842);
   cursor: pointer;
 }
 
-.ClientId {
-  font-size: small;
-  color: grey;
-  margin-right: 5px;
+.DataClientItem:hover {
+  border-bottom: solid 2px rgba(255, 166, 0, 0.842);
 }
