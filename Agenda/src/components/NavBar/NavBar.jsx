@@ -23,7 +23,8 @@ function NavBar() {
 
         </li>
 
-        <li className="NavItem">PAGOS</li>
+        <Link className={activeRoute === "/Agenda" ? "NavItem active" : "NavItem"} to="/Agenda">AGENDA</Link>
+
 
         <li>
 
