@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar.jsx";
 import Home from "./components/Pages/Home.jsx";
 import Fichas from "./components/Pages/Fichas.jsx";
+import Agenda from "./components/Pages/Agenda.jsx";
 
 // CSS
 import "./index.css";
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         {/* PATH OF EACH PAGES */}
         <Route exact path="/" element={<Home />} />
         <Route exact path="fichas" element={<Fichas />} />
+        <Route exact path="agenda" element={<Agenda />} />
         
       </Routes>
     </Router>

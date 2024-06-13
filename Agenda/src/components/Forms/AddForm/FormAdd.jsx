@@ -18,6 +18,7 @@ function FormAdd() {
       var celular = formData.celular.value;
       var en_tratamiento = formData.en_tratamiento.value;
       var reserva = formData.reserva.value;
+      var day_reserva = formData.day_reserva.value;
     //
 
     // MAKE THE POST REQUEST TO THE API
@@ -32,6 +33,7 @@ function FormAdd() {
             celular: celular,
             en_tratamiento: en_tratamiento,
             reserva: reserva,
+            day_reserva: day_reserva,
           }),
         });
         if (response.ok) {
@@ -60,6 +62,7 @@ function FormAdd() {
           <InputForm TextInput={"Celular"} name={"celular"} />
           <InputForm TextInput={"En Tratamiento"} name={"en_tratamiento"} />
           <InputForm TextInput={"Reserva"} name={"reserva"} />
+          <input type="date" name="day_reserva" id="" />
         </div>
 
         <div className="AntationAndButtonContainer">
